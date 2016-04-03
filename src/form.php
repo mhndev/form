@@ -38,7 +38,7 @@ class form
 		$this->errors = [];
 		if(!empty($this->inputs)){
 			foreach($this->inputs as $input){
-				$this->errors[$input->getName()] = $input->checkErrors();
+				$this->errors[$input->getName()] = $input->checkError();
 			}
 		}
 
