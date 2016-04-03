@@ -97,6 +97,8 @@ class form
             if(!empty($data[$key]))
                 $this->data[$key] = $data[$key];
         }
+
+        $this->getErrors();
     }
 
 
