@@ -1,0 +1,13 @@
+{
+    "name": "mhndev/form",
+    "description": "simple and light php form",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Majid Abdolhosseini",
+            "email": "majid8911303@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
