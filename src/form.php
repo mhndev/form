@@ -48,6 +48,10 @@ class form
 
 	public function getData()
 	{
+
+		if(!empty($this->data)){
+			return $this->data;
+		}
 		$this->data = [];
 
 		foreach($this->inputs as $input){
@@ -86,9 +90,13 @@ class form
 	 */
     public function fill(array $data)
     {
-    	foreach ($data as $key => $value) {
-    		$this->inputs[$key]->setValue($value);
-    	}
+        /** @var input $input */
+        foreach($this->inputs as $input){
+            $key = $input->getName();
+
+            if(!empty($data[$key]))
+                $this->data[$key] = $data[$key];
+        }
     }
 
 

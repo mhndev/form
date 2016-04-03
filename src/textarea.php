@@ -15,7 +15,7 @@ class textarea extends input
     {
         return "<div class='row'>
                 <div class='".$this->getAttribute('label','label_class')."'>
-                  <label class='title'>".$this->getAttribute('label','label_class')."</label>
+                  <label class='title'>".$this->getAttribute('label','label_text')." :</label>
                 </div>
                 <div class='textarea'>
                   <textarea></textarea>

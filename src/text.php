@@ -15,14 +15,14 @@ class text extends input
 	public function render()
 	{
 		$inputHtml = "<div class='row'><div class='label'><label class='".$this->getAttribute('label','label_class')."'>".$this->getAttribute('label','label_text')." :</label></div>";
-		
+
 		$input = '';
 		foreach($this->getAttribute('input') as $attr=>$val){
 			$input .= " $attr=$val ";
 		}
 
 		return  $inputHtml."<div class='input'>
-				   <input $input>
+				   <input $input required=''>
 				</div><div class='clear'></div>
 		  </div>";
 	}

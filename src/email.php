@@ -21,7 +21,7 @@ class email extends input
 
 
 		return  $inputHtml."<div class='input'>
-				   <input $input>
+				   <input $input required=''>
 				</div><div class='clear'></div>
 		  </div>";
 	}
