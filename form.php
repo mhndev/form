@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+namespace mhndev;
 
 class form
 {

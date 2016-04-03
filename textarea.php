@@ -1,5 +1,7 @@
 <?php
 
+namespace mhndev;
+
 class textarea extends input
 {
     public function checkError()

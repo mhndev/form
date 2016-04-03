@@ -1,5 +1,7 @@
 <?php
 
+namespace mhndev;
+
 class mobile extends input
 {
 	public function checkError()

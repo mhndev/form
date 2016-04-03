@@ -1,5 +1,7 @@
 <?php
 
+namespace mhndev;
+
 class text extends input
 {
 	public function checkError()

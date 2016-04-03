@@ -1,5 +1,7 @@
 <?php
 
+namespace mhndev;
+
 class email extends input
 {
 	public function checkError()
