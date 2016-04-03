@@ -14,7 +14,10 @@
     "autoload": {
         "psr-4": {
             "mhndev\\form\\": "src/"
-        }
+        },
+        "file":[
+            "src/helpers.php"
+        ]
     },
     "minimum-stability": "dev"
 }
