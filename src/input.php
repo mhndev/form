@@ -1,6 +1,6 @@
 <?php
 
-namespace mhndev;
+namespace mhndev\form;
 
 abstract class input 
 {
@@ -38,7 +38,7 @@ abstract class input
      */
     public function setAttribute($attribute, $value)
 	{
-        if(is_array($value) && \mhndev\isAssoc($value)){
+        if(is_array($value) && \mhndev\form\isAssoc($value)){
             $key = key($value);
 
             if(empty($this->attributes[$attribute])) {

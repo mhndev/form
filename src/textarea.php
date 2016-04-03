@@ -1,6 +1,6 @@
 <?php
 
-namespace mhndev;
+namespace mhndev\form;
 
 class textarea extends input
 {
