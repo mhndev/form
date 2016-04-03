@@ -15,7 +15,7 @@
         "psr-4": {
             "mhndev\\form\\": "src/"
         },
-        "file":[
+        "files":[
             "src/helpers.php"
         ]
     },
