@@ -87,6 +87,7 @@ class form
 	 *]
 	 *
 	 * @param array $data
+	 * @return array
 	 */
     public function fill(array $data)
     {
@@ -98,7 +99,7 @@ class form
                 $this->data[$key] = $data[$key];
         }
 
-        $this->getErrors();
+        return $this->getErrors();
     }
 
 

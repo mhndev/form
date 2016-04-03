@@ -20,8 +20,15 @@ class mobile extends input
 			$input .= " $attr=$val ";
 		}
 
+		$errors = $this->getErrors();
+
+		if(!empty($errors))
+			$errorsText = implode(' ', $errors);
+		else
+			$errorsText = '';
+
 		return  $inputHtml."<div class='input'>
-				   <input $input>
+				   <input $input value='$errorsText'/>
 				</div><div class='clear'></div>
 		  </div>";
 	}
