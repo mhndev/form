@@ -6,6 +6,11 @@ class textarea extends input
 {
     public function checkError()
     {
+
+        if(!empty($this->errors)){
+            return $this->errors;
+        }
+
         if(!preg_match("/^[A-Za-z0-9 ,.'-]{0,200}+$/",$this->value)) {
             $this->errors[]='The message you entered does not appear to be valid.';
         }

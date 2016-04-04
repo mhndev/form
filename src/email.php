@@ -6,6 +6,10 @@ class email extends input
 {
 	public function checkError()
 	{
+		if(!empty($this->errors)){
+			return $this->errors;
+		}
+		
 		if(!preg_match('/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/',$this->value)) {
 			return $this->errors[]= 'The Email Address is not valid.';
 		}

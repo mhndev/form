@@ -6,6 +6,9 @@ class text extends input
 {
 	public function checkError()
 	{
+		if(!empty($this->errors)){
+			return $this->errors;
+		}
 
 		if(!preg_match("/^[A-Za-z .'-]{1,20}+$/",$this->value)) {
 			$this->errors[]='The Name is not valid.';

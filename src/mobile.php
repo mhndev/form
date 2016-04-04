@@ -6,6 +6,10 @@ class mobile extends input
 {
 	public function checkError()
 	{
+		if(!empty($this->errors)){
+			return $this->errors;
+		}
+		
 		if(!preg_match('/^[0-9]{0,20}$/',$this->value)) {
 			return $this->errors[]= 'The Mobile you entered does not appear to be valid.';
 		}
