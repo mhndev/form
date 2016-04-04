@@ -6,8 +6,8 @@ class textarea extends input
 {
     public function checkError()
     {
-        if(!preg_match("/^[A-Za-z .'-]{0,20}+$/",$this->value)) {
-            $this->errors[]='The Name you entered does not appear to be valid.<br />';
+        if(!preg_match("/^[A-Za-z0-9 ,.'-]{0,200}+$/",$this->value)) {
+            $this->errors[]='The message you entered does not appear to be valid.';
         }
     }
 
@@ -32,7 +32,7 @@ class textarea extends input
                   <label class='title'>".$this->getAttribute('label','label_text')." :</label>
                 </div>
                 <div class='textarea'>
-                  <textarea $textarea>$errorsText</textarea>
+                  <textarea $textarea>$errorsText</textarea>  
                 </div>
                 <div class='clear'></div>
               </div>";

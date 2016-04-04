@@ -95,8 +95,10 @@ class form
         foreach($this->inputs as $input){
             $key = $input->getName();
 
-            if(!empty($data[$key]))
+            if(!empty($data[$key])){
+            	$input->setValue($data[$key]);
                 $this->data[$key] = $data[$key];
+            }
         }
 
         return $this->getErrors();

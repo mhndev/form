@@ -8,7 +8,7 @@ class text extends input
 	{
 
 		if(!preg_match("/^[A-Za-z .'-]{1,20}+$/",$this->value)) {
-			$this->errors[]='The Name you entered does not appear to be valid.<br />';
+			$this->errors[]='The Name is not valid.';
 		}
 	}
 
